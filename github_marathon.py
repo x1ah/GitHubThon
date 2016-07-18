@@ -35,7 +35,6 @@ class CreatCommit(object):
     def git_push(self):
         system("git add .")
         system("git commit -m'commit by robot'")
-        time.sleep(2)
         system("git push")
 
     def run(self):
