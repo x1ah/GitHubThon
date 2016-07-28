@@ -49,4 +49,4 @@ if __name__ == '__main__':
     while True:
         new_commit = CreatCommit()
         new_commit.run()
-        time.sleep(3)
+        time.sleep(86400)
