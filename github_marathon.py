@@ -33,7 +33,7 @@ class CreatCommit(object):
         return new_json
 
     def git_push(self):
-        system("git add .")
+        system("git add --all .")
         system("git commit -m'commit by robot'")
         system("git push")
 
@@ -46,5 +46,7 @@ class CreatCommit(object):
             pass
 
 if __name__ == '__main__':
-    new_commit = CreatCommit()
-    new_commit.run()
+    while True:
+        new_commit = CreatCommit()
+        new_commit.run()
+        time.sleep(3)
